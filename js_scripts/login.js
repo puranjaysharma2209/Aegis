@@ -12,7 +12,7 @@ loginForm.addEventListener("submit", function(event) {
     }
     if (emailInput === 'admin' && password === 'admin') 
     {
-        window.location.href = "webpages/dashboard.html";
+        window.location.href = "dashboard.html";
     }
     else {
         alert("Invalid credentials, please enter again");

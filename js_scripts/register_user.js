@@ -12,7 +12,7 @@ registerForm.addEventListener("submit", function(event) {
     }
     else{
         alert("Account creation successful. You will receive your credentials on the registered email ID")
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
     }
     
 });
