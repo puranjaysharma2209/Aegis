@@ -4931,7 +4931,8 @@ fieldset:disabled .btn {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1rem 1rem
+    padding: -1rem 1rem
+    
 }
 
 .card-title {
