@@ -1,0 +1,36 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        white: { A700: "#ffffff" },
+        blue_gray: { 400: "#8a8b8c", 900: "#2c2c2c", "900_01": "#0f1642", "100_01": "#d9d9d9" },
+        red: { A700: "#e50201", A700_01: "#f30000" },
+        teal: { 400: "#2dcd7a", "100_99": "#99d0d899", A700_99: "#09beb399" },
+        black: { 900: "#000000", "900_87": "#00000087", "900_99": "#00000099" },
+        lime: { 900: "#776c27" },
+        yellow: { A700: "#f9d900" },
+        green: { 400: "#6ac94f" },
+        gray: { 500: "#a8a8a8", "500_02": "#979797", "500_7c": "#9797977c", "500_03": "#999999" },
+        deep_purple: { A200: "#7e72f2" },
+        orange: { A200: "#ffa84c" },
+        cyan: { 100: "#c2e3e8" },
+        indigo: { A100_99: "#9d93ff99" },
+        gray_800: "#464646",
+        green_800: "#0a833b",
+      },
+      boxShadow: {
+        xs: "0px 2px  8px 0px #00000013",
+        sm: "0px 2px  10px 0px #0000002b",
+        md: "0px 2px  8px 0px #00000022",
+        lg: "-1px 1px  8px 0px #7e72f293",
+      },
+      fontFamily: { montserrat: "Montserrat", poppins: "Poppins" },
+      backgroundImage: { gradient: "linear-gradient(90deg, #6ac94f54,#6ac94f54)" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
